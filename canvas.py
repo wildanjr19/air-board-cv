@@ -114,13 +114,13 @@ class DrawingCanvas:
     
     def add_to_frame(self, frame: np.ndarray) -> np.ndarray:
         """
-        overlay canvas ke frame video. Pakai alpha blending untuk menggabungkan canvas dengan frame asli.
+        overlay canvas ke frame video. pakai alpha blending untuk menggabungkan canvas dengan frame asli.
         
         Args:
-            frame: Video frame (BGR)
+            frame: frame video asli dari webcam
             
         Returns:
-            Combined frame with canvas overlay
+            video frame dengan canvas digabungkan
         """
         # Use alpha blending for smooth overlay
         # Create a mask where we have drawn
